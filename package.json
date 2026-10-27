@@ -1,0 +1,40 @@
+{
+  "name": "dsh-ding",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：在顶层会话完成、报错、等待审批或提问时播放当前系统的提示音",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "notification",
+    "sound",
+    "提示音"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/couchette/dsh-ding.git"
+  },
+  "homepage": "https://github.com/couchette/dsh-ding#readme",
+  "bugs": {
+    "url": "https://github.com/couchette/dsh-ding/issues"
+  }
+}

@@ -1,0 +1,14 @@
+# dsh-ding bundle：注册「提示音」Host 插件。
+# 被 profile 的 dsh.profile.bundles 选中时加载 lib/index.js，监听顶层会话事件并播放
+# 当前系统的提示音（macOS 走 /usr/bin/osascript -e beep，即系统设置的警示音）。
+#
+# 需要覆盖配置时，在 profile 的 cordis.patch.yml 里按 id 打补丁（不要改这里）：
+#   - id: dsh-ding
+#     config:
+#       debug: true
+#       notify:
+#         question: false
+- insert:
+    - id: dsh-ding
+      name: dsh-ding
+      config: {}
